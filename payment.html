@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMB Automators - Payment</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav class="border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-gray-900">SMB Automators</a>
+                </div>
+                <div class="hidden sm:flex sm:items-center sm:space-x-8">
+                    <a href="index.html#services" class="text-gray-700 hover:text-gray-900">Services</a>
+                    <a href="index.html#about" class="text-gray-700 hover:text-gray-900">About</a>
+                    <a href="apps.html" class="text-gray-700 hover:text-gray-900">Apps</a>
+                    <a href="index.html#contact" class="text-gray-700 hover:text-gray-900">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Payment Form -->
+    <div class="max-w-3xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+        <div class="bg-white shadow-lg rounded-lg p-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-8">Payment Details</h2>
+            <form class="space-y-6">
+                <div>
+                    <label for="product" class="block text-sm font-medium text-gray-700">Product</label>
+                    <select id="product" name="product" class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-black focus:border-black rounded-md">
+                        <option value="workflow">Workflow Optimizer - $49/month</option>
+                        <option value="crm">CRM Connector - $2,000</option>
+                        <option value="insights">Data Insights Pro - $5,000</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
+                    <input type="text" id="name" name="name" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-black focus:border-black">
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                    <input type="email" id="email" name="email" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-black focus:border-black">
+                </div>
+                <div>
+                    <label for="card" class="block text-sm font-medium text-gray-700">Card Number</label>
+                    <input type="text" id="card" name="card" placeholder="1234 1234 1234 1234" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-black focus:border-black">
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <label for="expiry" class="block text-sm font-medium text-gray-700">Expiry Date</label>
+                        <input type="text" id="expiry" name="expiry" placeholder="MM/YY" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-black focus:border-black">
+                    </div>
+                    <div>
+                        <label for="cvc" class="block text-sm font-medium text-gray-700">CVC</label>
+                        <input type="text" id="cvc" name="cvc" placeholder="123" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-black focus:border-black">
+                    </div>
+                </div>
+                <div>
+                    <button type="submit" class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-black hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black">
+                        Complete Purchase
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-50">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <p class="text-gray-500">&copy; 2025 SMB Automators. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
